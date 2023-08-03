@@ -30,8 +30,7 @@
         "lint": "eslint \"**/*.{js,ts,tsx}\"",
         "prepack": "tsc -p .",
         "release": "release-it",
-        "example": "yarn --cwd example",
-        "bootstrap": "yarn example && yarn install",
+        "example": "yarn --cwd example run start",
         "pack": "yarn pack"
     },
     "keywords": [
