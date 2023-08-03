@@ -2,6 +2,8 @@
 
 A wireframe UI kit for React Native (and web, with Expo).
 
+<img src="https://raw.githubusercontent.com/rborn/react-native-wireframe-ui/main/docs/ios.png" width="100" >
+
 ## Installation
 
 ```
