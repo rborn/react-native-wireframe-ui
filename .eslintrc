@@ -1,0 +1,74 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["react", "react-native", "jest", "sort-imports-es6-autofix", "prettier"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true,
+        "jest": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true,
+            "arrowFunctions": true,
+            "blockBindings": true,
+            "classes": true,
+            "defaultParameters": true,
+            "destructuring": true,
+            "forOf": true,
+            "generators": true,
+            "objectLiteralComputedProperties": true,
+            "objectLiteralDuplicateProperties": true,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "regexUFlag": true,
+            "regexYFlag": true,
+            "restParams": true,
+            "spread": true,
+            "superInFunctions": true,
+            "templateStrings": true,
+            "unicodeCodePointEscapes": true,
+            "globalReturn": true,
+            "experimentalObjectRestSpread": true,
+            "experimentalDecorators": true
+        },
+        "babelOptions": {
+            "presets": ["@babel/preset-react"]
+        },
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "root": true,
+    "extends": ["@react-native-community"],
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        },
+        "react": { "version": "detect" }
+    },
+    "rules": {
+        "no-console": "error",
+        "max-len": ["error", { "code": 200, "ignoreStrings": true }],
+        "comma-dangle": "off",
+        "react/no-unescaped-entities": "off",
+        "no-extra-boolean-cast": "off",
+        "react/no-deprecated": "off",
+        "arrow-parens": "off",
+        "sort-imports-es6-autofix/sort-imports-es6": [
+            2,
+            {
+                "ignoreCase": true,
+                // "ignoreDeclarationSort": false,
+                "ignoreMemberSort": false,
+                "memberSyntaxSortOrder": ["none", "all", "single", "multiple"]
+            }
+        ],
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off"
+    },
+    "globals": {
+        "require": true,
+        "module": true
+    }
+}
